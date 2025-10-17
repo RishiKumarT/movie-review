@@ -29,7 +29,7 @@ jobs:
           context: ./review-backend
           file: ./review-backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/movie-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/movie-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
